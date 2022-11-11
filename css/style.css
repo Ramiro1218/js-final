@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.cardsContainer{
+    margin: 0 auto;
+}
+
+.card{
+    cursor: pointer;
+}
+
+.textoLogo{
+    margin: 7% 10%;
+}
+
+.logoImg{
+    transition: transform 0.3s ease-in-out;
+}
+
+.logoImg:hover{
+    transform: rotate(30deg);
+}
+
+
+#imgPizza, #imgPizza2{
+    height: 400px;
+    width: 200px;
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.2));
+    filter: drop-shadow(5px 5px 5px rgba(34, 34, 34, 0.2));
+    margin: 3px;
+}
+
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.buttons__container{
+    display: flex;
+    justify-content: center
+}
+
+.buttons__item{
+    padding: 15px;
+    margin: 10px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.buttons__item:hover{
+    background-color: rgb(247, 247, 247);
+}
+
+.shopping-cart-header {
+    border-bottom: 1px solid #ccc;
+  }
+
+
+  .shoppingCartTotal{
+      font-size: 25px;
+      margin-bottom: 15px;
+      padding: 50px 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+  }
+
+  .shoppingCart{
+      padding-top: 50px;
+  }
+
+  .shopping-cart-item, .cartPrice, .cartQuantity{
+    margin-top: -60px;
+  }
+
+  .pedido{
+    font-size: 25px;
+    font-weight: 50;
+    padding: 50px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.144);
+  }
+
+
+  input { 
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    background-color: #fff;
+    text-align: center; 
+}
+
+footer {
+    display: flex;
+    position: sticky;
+    top: 100%;
+    width: 100vw;
+    justify-content: center;
+    text-align: center;
+    background-color: #212529;
+}
+
+@media (max-width: 576px){
+
+    #imgPizza, #imgPizza2{
+        height: 300px;
+        width: 150px;
+    }
+
+    .buttons__item{
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 991px){
+    input { 
+        padding-left: 2px;
+    }
+}
